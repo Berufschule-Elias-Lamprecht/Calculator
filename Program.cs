@@ -6,6 +6,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        Calculator calc = new();
+
         Console.WriteLine("Calculator.");
         Console.WriteLine("Choose Option:");
         Console.WriteLine("1: Add");
@@ -32,19 +34,19 @@ internal class Program
         switch (pressedKey)
         {
             case "1":
-                result = Calculator.plus(num1, num2);
+                result = calc.plus(num1, num2);
                 break;
 
             case "2":
-                result = Calculator.minus(num1, num2);
+                result = calc.minus(num1, num2);
                 break;
 
             case "3":
-                result = Calculator.division(num1, num2);
+                result = calc.division(num1, num2);
                 break;
 
             case "4":
-                result = Calculator.multiplication(num1, num2);
+                result = calc.multiplication(num1, num2);
                 break;
         }
 
